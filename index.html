@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Datatables CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/> 
+   
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,700&display=swap" rel="stylesheet">
+
+    <!-- Ionic icons -->
+          <!--    Datatables  --> 
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <!-- CSS local website-->     
+    <link rel="stylesheet" href="css/estilos.css">   
+     
+   <!--   includes JS--> 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script> 
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script> 
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script> 
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    
+    
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">-->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css">
+
+    
+    
+     <!--Include  css-->   
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css"> 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">  
+
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+  
+     <!-- BootStrap 4.4.1 JS-->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+      <!-- SUM()  Datatables JS-->
+     <script src="https://cdn.datatables.net/plug-ins/1.10.20/api/sum().js"></script> 
+<title>STREETBURGER EVALUACION</title>
+</head>
+<body>
+    <div class="d-flex" id="content-wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="bg-warning">
+            <div align="center">
+               <div align="center" class="font-weight-bold text-center">
+               STREETBURGER
+            </div>
+            </div>
+            <div class="menu">
+                
+                <a href="#" class="d-block  p-3 border-0 " id="linksucursal"><i class="icon ion-md-apps lead mr-2"></i>
+                   Sucursal</a>
+    
+                                
+                <a href="#" class="d-block  p-3 border-0"  id="linkgrafica"><i class="icon ion-md-stats lead mr-2"></i>
+                   Grafica</a>
+           
+    
+                              
+                <a href="#" class="d-block  p-3 border-0" id="salir"><i class="icon ion-md-person lead mr-2"></i>
+                    Salir</a> 
+            </div>
+        </div>    
+
+<div class="w-100">
+          <nav class="navbar navbar-expand-lg border-bottom">
+               <div align="center">
+                
+            </div>
+          </nav>
+          <!-- Fin Navbar -->               
+  
+ <!-- Page Content -->
+ <div id="content" class="bg-gradient-light w-100">
+
+ </div>
+</div>
+</div>
+  
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script> 
+
+  <script id="MainScript">
+    // Initialize Firebase
+ 
+      
+  var firebaseConfig = {
+    apiKey: "AIzaSyBe8zLE44kIMV6osPKx2VTbDtR0zYDMy9w",
+    authDomain: "starfac-1119.firebaseapp.com",
+    databaseURL: "https://starfac-1119-default-rtdb.firebaseio.com",
+    projectId: "starfac-1119",
+    storageBucket: "starfac-1119.appspot.com",
+    messagingSenderId: "675235467374",
+    appId: "1:675235467374:web:066223bb348b2ff4fb567f",
+    measurementId: "G-W1HB2N6KR6"
+  };      
+      
+      
+  firebase.initializeApp(firebaseConfig);
+  </script>
+<script>     
+
+    
+ $(document).ready(function(){         
+     
+    $(document).on("click", "#linksucursal", function() { 
+      $('#content').load('sbSucursal.html');
+    }); 
+     
+     
+    $(document).on("click", "#linkgrafica", function() { 
+      $('#content').load('sbGrafica.html');
+    });
+ 
+     
+   $(document).on("click", "#salir", function() { 
+      $('#content').load('sbFinalizar.html');
+    });
+      
+  });
+</script>
+</body>
+
+</html>
