@@ -351,7 +351,7 @@ $('#btnenviar').on('click',function(){
         
         var cm='c'+key;
       
-$('#preguntas').append('<div class="opcion"><textarea class="comentario" id="'+cm+'"  placeholder="'+ texto +'" cols="40" rows="3" class="form-control"></textarea></div>');    
+$('#preguntas').append('<div class="opcion"><textarea class="comentario" id="'+cm+'"  placeholder="'+ texto +'" cols="30" rows="3" class="form-control"></textarea></div>');    
   });
  }); 
     $('#preguntas').append('<div class="opcion"><button class="finalizar button">Finalizar</button></div>'); 
