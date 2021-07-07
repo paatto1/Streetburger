@@ -20,7 +20,7 @@
           <!--    Datatables  --> 
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <!-- CSS local website-->     
-    <link rel="stylesheet" href="css/estilos.css">   
+    <link rel="stylesheet" href="css/estilos.css">    
      
    <!--   includes JS--> 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
@@ -85,11 +85,30 @@
         </div>    
 
 <div class="w-100">
-          <nav class="navbar navbar-expand-lg border-bottom">
-               <div align="center">
-                
-            </div>
-          </nav>
+          
+          <header>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-list2"></span>Menu</a>
+		</div>
+
+		<nav>
+			<ul>
+				<li> <a href="#" class="d-block  p-3 border-0 " id="lnksucursal"><i class="icon ion-md-apps lead mr-2"></i>
+                   Sucursal</a></li>
+    
+                                
+               <li><a href="#" class="d-block  p-3 border-0"  id="lnkgrafica"><i class="icon ion-md-stats lead mr-2"></i>
+                   Grafica</a></li> 
+           
+    
+                              
+                <li><a href="#" class="d-block  p-3 border-0" id="lnksalir"><i class="icon ion-md-person lead mr-2"></i>
+                    Salir</a> </li>
+				
+			</ul>
+		</nav>
+	</header>
+       
           <!-- Fin Navbar -->               
   
  <!-- Page Content -->
@@ -102,6 +121,9 @@
   <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script> 
+
+
+<script src="menu.js"></script> 
 
   <script id="MainScript">
     // Initialize Firebase
@@ -125,7 +147,9 @@
 
     
  $(document).ready(function(){         
+     
      $('#content').load('sbSucursal.html');
+     
     $(document).on("click", "#linksucursal", function() { 
       $('#content').load('sbSucursal.html');
     }); 
@@ -139,6 +163,22 @@
    $(document).on("click", "#salir", function() { 
       $('#content').load('sbFinalizar.html');
     });
+     
+     
+       $(document).on("click", "#lnksucursal", function() { 
+      $('#content').load('sbSucursal.html');
+    }); 
+     
+     
+    $(document).on("click", "#lnkgrafica", function() { 
+      $('#content').load('sbGrafica.html');
+    });
+ 
+     
+   $(document).on("click", "#lnksalir", function() { 
+      $('#content').load('sbFinalizar.html');
+    });
+     
       
   });
 </script>

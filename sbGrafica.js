@@ -117,7 +117,7 @@ var Tabulacion = [
     
      
     Preguntas.forEach(function(elemento, indice, array) {
-    $('.PreguntasLabel').append('<div>'+PreguntasID[indice]+'.'+elemento+'</div>');
+    $('.PreguntasLabel').append('<div class="rellenoitem">'+PreguntasID[indice]+'.'+elemento+'</div>');
 });
  });
     
