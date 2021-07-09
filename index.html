@@ -71,12 +71,10 @@
             <div class="menu">
                 
                 <a href="#" class="d-block  p-3 border-0 " id="linksucursal"><i class="icon ion-md-apps lead mr-2"></i>
-                   Sucursal</a>
-    
+                   Sucursal</a>    
                                 
                 <a href="#" class="d-block  p-3 border-0"  id="linkgrafica"><i class="icon ion-md-stats lead mr-2"></i>
-                   Grafica</a>
-           
+                   Grafica</a>       
     
                               
                 <a href="#" class="d-block  p-3 border-0" id="salir"><i class="icon ion-md-person lead mr-2"></i>
@@ -113,10 +111,11 @@
   
  <!-- Page Content -->
  <div id="content" class="bg-gradient-light w-100">
-
+ </div>
  </div>
 </div>
-</div>
+ 
+
   
   <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
@@ -126,9 +125,7 @@
 <script src="menu.js"></script> 
 
   <script id="MainScript">
-    // Initialize Firebase
- 
-      
+    // Initialize Firebase     
   var firebaseConfig = {
     apiKey: "AIzaSyBe8zLE44kIMV6osPKx2VTbDtR0zYDMy9w",
     authDomain: "starfac-1119.firebaseapp.com",
@@ -147,11 +144,12 @@
 
     
  $(document).ready(function(){         
-     
+      var contador = 1;
      $('#content').load('sbSucursal.html');
      
     $(document).on("click", "#linksucursal", function() { 
       $('#content').load('sbSucursal.html');
+      
     }); 
      
      
@@ -165,22 +163,44 @@
     });
      
      
-       $(document).on("click", "#lnksucursal", function() { 
+    $(document).on("click", "#lnksucursal", function() { 
       $('#content').load('sbSucursal.html');
+        menuAcciones();
     }); 
      
      
     $(document).on("click", "#lnkgrafica", function() { 
       $('#content').load('sbGrafica.html');
+       menuAcciones();
     });
  
      
    $(document).on("click", "#lnksalir", function() { 
       $('#content').load('sbFinalizar.html');
+        menuAcciones();
     });
      
-      
-  });
+
+     
+function menuAcciones(){         
+        
+  
+	
+        if ($('nav').is(':hidden')){
+            $('nav').show();
+            	$('nav').animate({
+				left: '0'
+			}); 
+        }else{
+           $('nav').hide();
+          }
+        
+        
+        
+        console.log($('nav').css('display'));  
+  };
+     
+ });
 </script>
 </body>
 
