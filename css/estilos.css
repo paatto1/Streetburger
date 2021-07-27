@@ -140,7 +140,8 @@ html,body{
 .parametros{
   margin: 0 auto;
   width: 300px;
-  background-color: #FFD600;
+  background-color:#000;
+  color:white;
   border-radius: 20px 20px 0px 0px; 
   margin-top: 10px;
 }
