@@ -137,7 +137,7 @@ html,body{
 
 }
 
-.parametros select,.parametros option{
+.parametros select,.parametros option .comentario{
   background-color: #1F2739;
   color: white;
   font-weight: 900;
