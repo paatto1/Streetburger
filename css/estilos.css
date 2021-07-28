@@ -17,6 +17,8 @@ header nav {
 	display:none;
 }
 
+
+
 header nav ul {
 	overflow:hidden;
 	list-style:none;
@@ -109,7 +111,7 @@ html,body{
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color:beige;
+  background-color:#000;
 }
 
 .PreguntasLabel div{
