@@ -102,7 +102,7 @@ section {
 	width:130px;
 	height: auto;
 	padding: 7px;
-        margin:0 auto;
+    vertical-align: middle;
     }
 }
 
@@ -179,8 +179,6 @@ html,body{
 .textcenter{
   text-align:center;
 }
-
-
 
 .button:hover{
   background-color: black;
