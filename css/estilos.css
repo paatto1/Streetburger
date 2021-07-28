@@ -95,6 +95,9 @@ section {
 .comentario{
 	border: none;
 	width: 100%;
+	background-color: #1F2739;
+    color: white;
+    font-weight: 900;
 }
 
 .center{
@@ -137,7 +140,7 @@ html,body{
 
 }
 
-.parametros select,.parametros option, .comentario{
+.parametros select,.parametros option{
   background-color: #1F2739;
   color: white;
   font-weight: 900;
