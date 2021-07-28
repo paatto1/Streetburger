@@ -96,7 +96,7 @@ background-color: #000;
 }
 
 .comentario{
-    width: 290px;
+    width: 270px;
 }
 
 .center{
@@ -150,15 +150,13 @@ html,body{
 .preguntas{
  margin: 0 auto;
  width: 300px;
-background-color: lightgray;
-  
+ background-color: lightgray;  
 }
 
 .preguntas img{
     width:  50px;
     height: 50px;
-    cursor: pointer;
-     
+    cursor: pointer;     
 }
 
 
