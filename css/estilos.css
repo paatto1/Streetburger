@@ -93,7 +93,8 @@ section {
 }
 
 .comentario{
-    width: 270px;
+	border: none;
+	width: 100%;
 }
 
 .center{
