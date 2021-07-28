@@ -96,6 +96,14 @@ section {
 		float:right;
 		font-size:40px;
 	}
+    
+    
+    .logo img{
+	width:130px;
+	height: auto;
+	padding: 7px;
+        margin:0 auto;
+    }
 }
 
 .comentario{
