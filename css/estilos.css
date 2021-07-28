@@ -17,7 +17,11 @@ header nav {
 	display:none;
 }
 
-
+.logo img{
+	width:130px;
+	height: auto;
+	padding: 7px;
+}
 
 header nav ul {
 	overflow:hidden;
