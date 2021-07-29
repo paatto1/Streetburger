@@ -121,6 +121,10 @@ section {
   margin: 40px auto;  
 }
 
+#sidebar-container{
+	background-color:#FFD600;
+}
+
 html,body{
   display: flex;
   flex-direction: column;
